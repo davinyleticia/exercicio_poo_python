@@ -34,6 +34,8 @@ print(f"Saldo após depósito: R${conta.saldo}")
 conta.sacar(500)
 print(f"Saldo após saque: R${conta.saldo}")
 ```
+[exercicio_class/resolucao_1.py](exercicio_class/resolucao_1.py)
+
 
 - Exercício 2: Exercício de Classe, Atributo e Método (Nível Básico): Retângulo
 
@@ -63,6 +65,8 @@ perimetro = retangulo.calcular_perimetro()
 print(f"Área do retângulo: {area}")
 print(f"Perímetro do retângulo: {perimetro}")
 ```
+[exercicio_class/resolucao_2.py](exercicio_class/resolucao_2.py)
+
 
 ## ✏️ Exercicío Herança
 
@@ -83,6 +87,9 @@ Implemente o método `descricao()` em cada uma das subclasses para incluir infor
 
 Crie instâncias de Carro e Moto, atribuindo valores adequados aos atributos de cada veículo. Use o método `descricao()` para exibir informações detalhadas sobre cada veículo.
 
+[exercicio_heranca/resolucao_1.py](exercicio_heranca/resolucao_1.py)
+
+
 - Exercício 2: Produtos
 
 Crie um sistema de gerenciamento de produtos em uma loja. Crie uma classe base chamada Produto com os seguintes atributos:
@@ -99,6 +106,8 @@ Crie instâncias de ProdutoFisico e ProdutoDigital, atribuindo valores adequados
 
 Esses exercícios ajudarão você a praticar a criação de hierarquias de classes com herança em Python e a entender como compartilhar funcionalidades comuns e adicionar comportamentos específicos em subclasses.
 
+[exercicio_heranca/resolucao_2.py](exercicio_heranca/resolucao_2.py)
+
  - Exercício 3 - Extra 
 
 Implemente o método `calcular_aluguel()` em cada uma das subclasses para calcular o valor do aluguel com base em regras específicas:
@@ -108,6 +117,9 @@ Para Casa, o aluguel deve ser calculado como `preco_base + (area_terreno * 5)`.
 Para Apartamento, o aluguel deve ser calculado como `preco_base + (numero_quartos * 300)`.
 
 e superclass tem o atributo endereco e `nome_do_proprietario`
+
+
+[exercicio_heranca/resolucao_3_extra.py](exercicio_heranca/resolucao_3_extra.py)
 
 ## ✏️ Encapsulamento
 
