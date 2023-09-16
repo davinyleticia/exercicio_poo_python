@@ -245,7 +245,7 @@ Crie instâncias de FuncionarioTemporario e FuncionarioIntegral, atribuindo valo
 
 Calcule e imprima o pagamento de cada funcionário usando o método `calcular_pagamento()`.
 
-[exercicio_casa/resolucao_1.py](exercicio_casa/resolucao_1.py)
+[exercicio_casa/resolucao_2.py](exercicio_casa/resolucao_2.py)
 
 ## Sobre
 
