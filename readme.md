@@ -130,11 +130,15 @@ Crie uma classe chamada Produto que represente um produto em um catálogo. A cla
 
 nome: o nome do produto. preco: o preço do produto. A classe deve incluir métodos públicos para definir e obter o nome e o preço do produto. Além disso, crie um método `__str` para exibir o produto de forma amigável.
 
+[exercicio_encapsulamento/resolucao_1.py](exercicio_encapsulamento/resolucao_1.py)
+
 - Exercício 2: Biblioteca
 
 Crie uma classe chamada Livro que represente um livro em uma biblioteca. A classe deve ter os seguintes atributos privados:
 
 titulo: o título do livro. autor: o autor do livro. `_disponivel`: um indicador de disponibilidade do livro (inicialmente definido como True se o livro estiver disponível para empréstimo). A classe deve incluir métodos públicos para emprestar o livro (definindo _disponivel como False) e devolvê-lo (definindo _disponivel como True). Além disso, crie um método `__str` para exibir informações sobre o livro.
+
+[exercicio_encapsulamento/resolucao_2.py](exercicio_encapsulamento/resolucao_2.py)
 
 - Exercício 3: Banco de Dados de Funcionários
 
@@ -142,11 +146,15 @@ Crie uma classe chamada Funcionario que represente um funcionário em um banco d
 
 nome: o nome do funcionário. cargo: o cargo do funcionário. A classe deve incluir métodos públicos para definir e obter o nome e o cargo do funcionário. Além disso, crie um método `__str` para exibir informações sobre o funcionário.
 
+[exercicio_encapsulamento/resolucao_3.py](exercicio_encapsulamento/resolucao_3.py)
+
 - Exercício 4: Agenda de Compromissos
 
 Crie uma classe chamada Compromisso que represente um compromisso na agenda de alguém. A classe deve ter os seguintes atributos privados:
 
 data: a data do compromisso. descricao: a descrição do compromisso. A classe deve incluir métodos públicos para definir e obter a data e a descrição do compromisso. Além disso, crie um método `__str` para exibir informações sobre o compromisso.
+
+[exercicio_encapsulamento/resolucao_4.py](exercicio_encapsulamento/resolucao_4.py)
 
 
 ## ✏️ Abstração
@@ -155,22 +163,89 @@ data: a data do compromisso. descricao: a descrição do compromisso. A classe d
 
 Crie uma classe abstrata chamada FiguraGeometrica com um método abstrato `calcular_area()`. Em seguida, crie subclasses concretas como Retangulo, Circulo e Triangulo que herdam da classe FiguraGeometrica. Cada uma das subclasses deve implementar o método calcular_area() de acordo com a fórmula apropriada para cada figura geométrica.
 
+[exercicio_abstracao/resolucao_1.py](exercicio_abstracao/resolucao_1.py)
+
 - Exercício 2: Animais
 
 Crie uma classe abstrata chamada Animal com métodos abstratos `emitir_som()` e `mover()`. Em seguida, crie subclasses concretas como Cachorro, Gato e Pato que herdam da classe Animal. Cada uma das subclasses deve implementar os métodos emitir_som() e mover() de acordo com o comportamento apropriado para cada animal.
+
+
+[exercicio_abstracao/resolucao_2.py](exercicio_abstracao/resolucao_2.py)
 
 - Exercício 3: Veículos
 
 Crie uma classe abstrata chamada Veiculo com métodos abstratos `acelerar()` e `frear()`. Em seguida, crie subclasses concretas como Carro, Moto e Caminhao que herdam da classe Veiculo. Cada uma das subclasses deve implementar os métodos `acelerar()` e `frear()` de acordo com o comportamento apropriado para cada tipo de veículo.
 
+[exercicio_abstracao/resolucao_3.py](exercicio_abstracao/resolucao_3.py)
+
 - Exercício 4: Produtos
 
 Crie uma classe abstrata chamada Produto com métodos abstratos `calcular_preco()` e `descricao()`. Em seguida, crie subclasses concretas como Livro, Eletronico e Alimento que herdam da classe Produto. Cada uma das subclasses deve implementar os métodos `calcular_preco()` e descricao() de acordo com as características específicas de cada produto.
+
+[exercicio_abstracao/resolucao_4.py](exercicio_abstracao/resolucao_4.py)
 
 - Exercício 5: Formas de Pagamento
 
 Crie uma classe abstrata chamada FormaPagamento com métodos abstratos `calcular_desconto()` e `calcular_parcelas()`. Em seguida, crie subclasses concretas como CartaoCredito, Boleto e Transferencia que herdam da classe FormaPagamento. Cada uma das subclasses deve implementar os métodos `calcular_desconto()` e `calcular_parcelas()` de acordo com as regras de pagamento específicas.
 
+[exercicio_abstracao/resolucao_5.py](exercicio_abstracao/resolucao_5.py)
+
+
+# Exercício de Casa 🏠 
+
+
+## 👩🏻‍💻 Crie uma classe base chamada Veiculo com os seguintes atributos:
+
+- modelo: o modelo do veículo (uma string).
+- ano: o ano de fabricação do veículo (um número inteiro).
+preco: o preço do veículo (um número decimal).
+Na classe Veiculo, implemente um método chamado `calcular_imposto()` que retorna o imposto a ser pago pelo veículo. O imposto é calculado como 10% do preço do veículo.
+
+Crie uma classe chamada Carro que herda da classe Veiculo. Adicione um atributo adicional:
+
+- marca: a marca do carro (uma string).
+Na classe Carro, implemente um método chamado desconto() que retorna um desconto de 5% no preço do carro.
+
+Crie uma classe chamada Moto que também herda da classe Veiculo. Adicione um atributo adicional:
+
+- cilindrada: a cilindrada da moto (um número inteiro).
+Na classe Moto, implemente um método chamado `calcular_imposto()` que calcula o imposto a ser pago pela moto. O imposto para motos é de 5% do preço do veículo.
+
+Crie instâncias de Carro e Moto, atribuindo valores adequados aos atributos de cada veículo.
+
+Calcule e imprima o imposto a ser pago por cada veículo usando o método `calcular_imposto()`.
+
+[exercicio_casa/resolucao_1.py](exercicio_casa/resolucao_1.py)
+
+## 🧠 Exercício de Herança em Python: Sistema de Gerenciamento de Funcionários (Exercicío Avançado Extra)
+
+Você está encarregado de criar um sistema de gerenciamento de funcionários para uma empresa. O sistema deve ser capaz de lidar com diferentes tipos de funcionários e calcular seus salários com base em suas características específicas. Para isso, você precisa implementar a hierarquia de classes apropriada usando herança em Python.
+
+Instruções:
+
+Crie uma classe base chamada Funcionario com os seguintes atributos:
+
+ - nome: o nome do funcionário.
+ - salario: o salário base do funcionário (inicialmente definido como 0).
+
+A classe Funcionario deve ter um método chamado `calcular_pagamento()` que retorna o pagamento do funcionário. No entanto, este método deve ser definido como um método abstrato (utilizando `pass`) uma vez que cada tipo de funcionário (temporário e integral) calculará o pagamento de maneira diferente.
+
+Crie uma classe chamada FuncionarioTemporario, que herda da classe Funcionario. Esta classe deve ter os seguintes atributos adicionais:
+
+- salario_por_hora: o salário por hora do funcionário temporário.
+- horas_trabalhadas: o número de horas trabalhadas pelo funcionário temporário.
+Na classe FuncionarioTemporario, implemente o método `calcular_pagamento()` para calcular o pagamento do funcionário temporário com base no salário por hora e nas horas trabalhadas.
+
+Crie uma classe chamada FuncionarioIntegral, que também herda da classe Funcionario. Esta classe deve ter um atributo adicional:
+
+- salario_mensal: o salário mensal do funcionário integral.
+Na classe FuncionarioIntegral, implemente o método `calcular_pagamento()` para calcular o pagamento do funcionário integral, que é igual ao seu salário mensal.
+
+Crie instâncias de FuncionarioTemporario e FuncionarioIntegral, atribuindo valores adequados aos atributos de cada funcionário.
+
+Calcule e imprima o pagamento de cada funcionário usando o método `calcular_pagamento()`.
+
+[exercicio_casa/resolucao_1.py](exercicio_casa/resolucao_1.py)
 
 ## Sobre
 
