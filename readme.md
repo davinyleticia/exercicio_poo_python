@@ -253,4 +253,4 @@ exercícios feito para aula da Reprograma turma 0n26 Python
 
 criado por @github.com/davinyleticia
 
-[https://daviny.dev](https://daviny.dev)
+[https://vidal.press](https://vidal.press)
